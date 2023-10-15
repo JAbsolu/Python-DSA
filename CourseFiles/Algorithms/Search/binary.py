@@ -5,6 +5,8 @@ def findNum(n):
   mid = len(MyList) // 2
   max = len(MyList) - 1
 
+    
+
 
 print(findNum(5))
 print(findNum(10))
