@@ -17,7 +17,7 @@ def main():
   petData.close()  #close the file
 
   # Second step - find all owner(s) with snake family type and insect family type pets.
-  def get_snake_family_type(pet):
+  def get_types(pet):
     petFamType = pet.get_family_type()  #get the pet family type
 
     if (petFamType == "snake" or petFamType == "insect"):
@@ -26,7 +26,7 @@ def main():
 
   # First step ----- Output the pets data
   for item in pets:
-    get_snake_family_type(item) #Get the family type of the snake and its owner
+    get_types(item) #Get the family type of the snake and its owner
 
 if __name__ == '__main__':
   main()
