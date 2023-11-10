@@ -1,10 +1,9 @@
 
-def FindTarget(nums, num):
-  low = 0
-  mid = len(nums) - 1/ 2
-  high = len(nums) - 1
+def sum(nums):
+  if len(nums)==1:
+    return nums[0]
+  else:
+    return sum(nums[1:])+nums[0]
 
-  if (num > mid):
-    low = mid + 1
-    mid = (high - low) / 2
+print(sum([2,4,6,8,4,3,4,6,1]))
   
