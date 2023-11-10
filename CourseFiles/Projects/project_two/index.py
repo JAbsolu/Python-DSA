@@ -31,11 +31,11 @@ def findCapital():
     totalCorrectGuesses = 0 #keeping track of right answers, starting at 0
     totalAnswers = 0 #Keeping track of total answers
 
-    while totalAnswers < 5: #while the number of entered answers is less than 5
+    while totalAnswers < 2: #while the number of entered answers is less than 5
         keys = list(capitals_dictionary.keys()) #Get all the keys in the dictionary
         randomNum = random.randint(0, 49) #generate random number from 0 to 49 as the keys in the list are indexed from 0 to 49
         
-        guessCapital = str(input(f"What is the capital of {keys[randomNum]}: ")).capitalize() #The input from the user (an input str saved as guessCapital)
+        guessCapital = str(input(f"What is the capital of {keys[randomNum]}: ")).capitalize().strip() #The input from the user (an input str saved as guessCapital)
 
         if guessCapital not in capitals_dictionary.values(): #If the entered value is not a value in the dictionary
             totalWrongGuesses += 1 #Add one to total wrong guesses
