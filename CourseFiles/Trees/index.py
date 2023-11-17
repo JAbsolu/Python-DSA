@@ -38,7 +38,6 @@ class BinaryTree:
   '''
   def get_right_child(self):
     return self.right
-
   '''
     Print the tree in the terminal
   '''
@@ -61,11 +60,9 @@ class BinaryTree:
         stack.append(node.get_right_child())
       if node.left:
         stack.append(node.get_left_child())
-
 '''
   Building the tree from a list
 '''
-
 my_list = ['Louis', 'Brian', 'Peter', 'George', 'Amy', 'Hannah', 'Sarah', 'Mike', 'David']
 
 def BuildTree(nums):
